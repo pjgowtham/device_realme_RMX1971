@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := cepheus
+PRODUCT_RELEASE_NAME := RMX1971
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -23,11 +23,16 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := cepheus
-PRODUCT_NAME := omni_cepheus
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Xiaomi Mi 9
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_DEVICE := RMX1971
+PRODUCT_NAME := omni_RMX1971
+PRODUCT_BRAND := Realme
+PRODUCT_MODEL := Realme 5 Pro
+PRODUCT_MANUFACTURER := Realme
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=RMX1971 \
+    BUILD_PRODUCT=RMX1971 \
+    TARGET_DEVICE=RMX1971
 
 # HACK: Set vendor patch level
 PRODUCT_PROPERTY_OVERRIDES += \
